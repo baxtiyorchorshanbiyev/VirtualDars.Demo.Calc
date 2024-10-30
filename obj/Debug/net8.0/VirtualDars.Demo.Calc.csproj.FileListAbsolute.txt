@@ -1,0 +1,14 @@
+/Users/baxtiyorchorshanbiyev/c#/VirtualDars.Demo.Calc/bin/Debug/net8.0/VirtualDars.Demo.Calc
+/Users/baxtiyorchorshanbiyev/c#/VirtualDars.Demo.Calc/bin/Debug/net8.0/VirtualDars.Demo.Calc.deps.json
+/Users/baxtiyorchorshanbiyev/c#/VirtualDars.Demo.Calc/bin/Debug/net8.0/VirtualDars.Demo.Calc.runtimeconfig.json
+/Users/baxtiyorchorshanbiyev/c#/VirtualDars.Demo.Calc/bin/Debug/net8.0/VirtualDars.Demo.Calc.dll
+/Users/baxtiyorchorshanbiyev/c#/VirtualDars.Demo.Calc/bin/Debug/net8.0/VirtualDars.Demo.Calc.pdb
+/Users/baxtiyorchorshanbiyev/c#/VirtualDars.Demo.Calc/obj/Debug/net8.0/VirtualDars.Demo.Calc.GeneratedMSBuildEditorConfig.editorconfig
+/Users/baxtiyorchorshanbiyev/c#/VirtualDars.Demo.Calc/obj/Debug/net8.0/VirtualDars.Demo.Calc.AssemblyInfoInputs.cache
+/Users/baxtiyorchorshanbiyev/c#/VirtualDars.Demo.Calc/obj/Debug/net8.0/VirtualDars.Demo.Calc.AssemblyInfo.cs
+/Users/baxtiyorchorshanbiyev/c#/VirtualDars.Demo.Calc/obj/Debug/net8.0/VirtualDars.Demo.Calc.csproj.CoreCompileInputs.cache
+/Users/baxtiyorchorshanbiyev/c#/VirtualDars.Demo.Calc/obj/Debug/net8.0/VirtualDars.Demo.Calc.dll
+/Users/baxtiyorchorshanbiyev/c#/VirtualDars.Demo.Calc/obj/Debug/net8.0/refint/VirtualDars.Demo.Calc.dll
+/Users/baxtiyorchorshanbiyev/c#/VirtualDars.Demo.Calc/obj/Debug/net8.0/VirtualDars.Demo.Calc.pdb
+/Users/baxtiyorchorshanbiyev/c#/VirtualDars.Demo.Calc/obj/Debug/net8.0/VirtualDars.Demo.Calc.genruntimeconfig.cache
+/Users/baxtiyorchorshanbiyev/c#/VirtualDars.Demo.Calc/obj/Debug/net8.0/ref/VirtualDars.Demo.Calc.dll
