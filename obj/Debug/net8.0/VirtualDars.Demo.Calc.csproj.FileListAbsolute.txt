@@ -12,3 +12,4 @@
 /Users/baxtiyorchorshanbiyev/c#/VirtualDars.Demo.Calc/obj/Debug/net8.0/VirtualDars.Demo.Calc.pdb
 /Users/baxtiyorchorshanbiyev/c#/VirtualDars.Demo.Calc/obj/Debug/net8.0/VirtualDars.Demo.Calc.genruntimeconfig.cache
 /Users/baxtiyorchorshanbiyev/c#/VirtualDars.Demo.Calc/obj/Debug/net8.0/ref/VirtualDars.Demo.Calc.dll
+/Users/baxtiyorchorshanbiyev/c#/VirtualDars.Demo.Calc/obj/Debug/net8.0/VirtualDars.Demo.Calc.sourcelink.json

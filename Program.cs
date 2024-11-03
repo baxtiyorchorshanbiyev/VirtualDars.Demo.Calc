@@ -1,16 +1,20 @@
 ﻿
+using VirtualDars.Demo.Calc;
+// MathDemo.DoCalculations();
+// LoopsAndArrayDemo.ForLoop();
+// LoopsAndArrayDemo.Arrays();
+// LoopsAndArrayDemo.ForEachLoop();
+
 while (true)
 {
   Console.WriteLine("Kalkulyator dasturi ishga tushdi");
   double firstNumber = ParseNumber();
-  string operation = ValidatingOperation(firstNumber);
+  string operation = ValidatingOperation();
   if (operation == "**")
   {
-    double squaredResult = DoubleNumber(firstNumber);
-    Console.WriteLine($"Natija: {firstNumber} {operation} = {squaredResult}");
+    SquareOperation(firstNumber);
     continue;
   }
-
   double secondNumber = ParseNumber();
   ShowResult(firstNumber, secondNumber, operation);
 }
@@ -19,37 +23,30 @@ double ParseNumber()
 {
   bool isParse = false;
   double result = 0;
-  Console.WriteLine("Sonni kiriting!");
   while (!isParse)
   {
+    Console.WriteLine("Sonni kiriting!");
     string numberString = Console.ReadLine();
     isParse = double.TryParse(numberString, out result);
-    if (!isParse)
-    {
-      Console.WriteLine("Iltimos faqat son kiriting!");
-    }
+  }
+  return result;
+}
+string ValidatingOperation()
+{
+  string operation = string.Empty;
+
+  while (operation != "+" && operation != "-" &&
+    operation != "*" && operation != "/" &&
+    operation != "**" && operation != "^")
+  {
+    Console.WriteLine("Amalni kiriting (+ - * / ** ^)");
+    operation = Console.ReadLine();
+
   }
 
-  return result;
+  return operation;
 }
-string ValidatingOperation(double firstNumber)
-{
-  bool isParse = false;
-  string result = string.Empty;
-  while (!isParse)
-  {
-    Console.WriteLine("Amalni kiriting (+ - * / **)");
-    string operationString = Console.ReadLine();
-    if (operationString == "+" || operationString == "-" ||
-    operationString == "*" || operationString == "/" || operationString == "**")
-    {
-      isParse = true;
-      result = operationString;
-      Console.WriteLine($"{firstNumber} {operationString}");
-    }
-  }
-  return result;
-}
+
 void ShowResult(double firstNumber, double secondNumber, string operation)
 {
   double result = operation switch
@@ -57,9 +54,18 @@ void ShowResult(double firstNumber, double secondNumber, string operation)
     "+" => firstNumber + secondNumber,
     "-" => firstNumber - secondNumber,
     "*" => firstNumber * secondNumber,
+    "^" => Math.Pow(firstNumber, secondNumber),
     "/" => secondNumber != 0 ? firstNumber / secondNumber : throw new DivideByZeroException("O ga bo'lib bo'lmaydi"),
   };
   Console.WriteLine($"Natija: {firstNumber} {operation} {secondNumber} = {result}");
+}
+
+
+
+void SquareOperation(double number)
+{
+  double squaredResult = DoubleNumber(number);
+  Console.WriteLine($"Natija: {number} ning kvadrati = {squaredResult}");
 }
 
 double DoubleNumber(double firstNumber)
