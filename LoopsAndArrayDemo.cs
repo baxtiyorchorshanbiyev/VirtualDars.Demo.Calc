@@ -1,19 +1,15 @@
-using System;
-
 namespace VirtualDars.Demo.Calc;
-
 public class LoopsAndArrayDemo
 {
   public static void ForLoop()
   {
-    //1. 0dan 9gacha bo'lgan sonlarni consolega chiqaradi
+    // 1. 0dan 9 gacha bo'lgan sonlarni consolega chiqaradi
     for (int i = 0; i < 10; i++)
     {
       Console.WriteLine(i);
     }
 
     //2. 1 dan 10 gacha bo'lgan sonlarning yig'indisini console ga chiqaring
-
     int result = 0;
     for (int i = 0; i <= 10; i++)
     {
@@ -30,14 +26,12 @@ public class LoopsAndArrayDemo
     {
       Console.WriteLine($"{number1} X {number2} = {number1 * number2}");
     }
-
     //4. pastga qarab yurish 
 
     for (int i = 100; i >= 1; i--)
     {
       Console.WriteLine(i);
     }
-
   }
 
 
@@ -147,17 +141,13 @@ public class LoopsAndArrayDemo
   public static void ForEachLoop()
   {
     var participants = new List<string> { "Abror", "Avaz", "Aziz" };
-
     //1
-
     foreach (string item in participants)
     {
       Console.WriteLine($"Assalomu alaykum: {item}");
     }
-
     //2
     participants.ForEach((gretting) => Console.WriteLine($"Assalomu alaykum: {gretting}"));
-
     //3
     double totalPrice = 0;
 
@@ -192,7 +182,6 @@ public class LoopsAndArrayDemo
         Console.WriteLine($"Qaytarilgan meva: {fruits[i]}");
       }
     }
-
 
   }
 }

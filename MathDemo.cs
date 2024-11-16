@@ -1,5 +1,3 @@
-using System;
-
 namespace VirtualDars.Demo.Calc;
 
 public class MathDemo

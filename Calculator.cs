@@ -1,5 +1,5 @@
 namespace VirtualDars.Demo.Calc;
-//changed
+
 public class Calculator
 {
   public void Start()
@@ -9,9 +9,9 @@ public class Calculator
       Console.WriteLine("Kalkulyator dasturi ishga tushdi");
       double firstNumber = ParseNumber();
       string operation = ValidatingOperation();
-      double secondNumber = ParseNumber();
-      var result = Calculate(firstNumber, secondNumber, operation);
-      Console.WriteLine($"Natija: {firstNumber} {operation} {secondNumber} = {result}");
+      double secondNumber = 0;
+      if (operation != "#") secondNumber = ParseNumber();
+      Calculate(firstNumber, secondNumber, operation);
     }
   }
   private double ParseNumber()
@@ -32,16 +32,16 @@ public class Calculator
 
     while (operation != "+" && operation != "-" &&
       operation != "*" && operation != "/" &&
-      operation != "^")
+      operation != "^" && operation != "#")
     {
-      Console.WriteLine("Amalni kiriting (+ - * / ^)");
+      Console.WriteLine("Amalni kiriting (+ - * / ^ #)");
       operation = Console.ReadLine();
 
     }
     return operation;
   }
 
-  private double Calculate(double firstNumber, double secondNumber, string operation)
+  private void Calculate(double firstNumber, double secondNumber, string operation)
   {
     double result = operation switch
     {
@@ -50,7 +50,11 @@ public class Calculator
       "*" => firstNumber * secondNumber,
       "^" => Math.Pow(firstNumber, secondNumber),
       "/" => secondNumber != 0 ? firstNumber / secondNumber : throw new DivideByZeroException("O ga bo'lib bo'lmaydi"),
+      "#" => Math.Sqrt(firstNumber)
     };
-    return result;
+    if (operation != "#")
+      Console.WriteLine($"Natija: {firstNumber} {operation} {secondNumber} = {result}");
+    else Console.WriteLine($"Natija: √{firstNumber} = {result} ");
+
   }
 }
