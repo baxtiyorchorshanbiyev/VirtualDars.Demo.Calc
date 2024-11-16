@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VirtualDars.Demo.Calc")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8235c3cc0a521b050885c60c0f6a4ee00bcea973")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2a40b79f5e8c4273afc14da52b1752c0fbc27a5b")]
 [assembly: System.Reflection.AssemblyProductAttribute("VirtualDars.Demo.Calc")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VirtualDars.Demo.Calc")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
