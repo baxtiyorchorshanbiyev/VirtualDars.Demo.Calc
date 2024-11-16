@@ -1,10 +1,6 @@
-using System;
-
 namespace VirtualDars.Demo.Calc;
-
 public class Calculator
 {
-
   public void Start()
   {
     while (true)
@@ -17,7 +13,6 @@ public class Calculator
       Console.WriteLine($"Natija: {firstNumber} {operation} {secondNumber} = {result}");
     }
   }
-
   private double ParseNumber()
   {
     bool isParse = false;
@@ -42,7 +37,6 @@ public class Calculator
       operation = Console.ReadLine();
 
     }
-
     return operation;
   }
 
@@ -58,5 +52,4 @@ public class Calculator
     };
     return result;
   }
-
 }
